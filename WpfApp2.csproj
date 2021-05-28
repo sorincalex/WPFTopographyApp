@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.16.0" />
+    <PackageReference Include="SkiaSharp" Version="2.80.0" />
+    <PackageReference Include="System.Drawing.Common" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="alglibnet2">
+      <HintPath>Files\alglibnet2.dll</HintPath>
+    </Reference>
+    <Reference Include="CapellaPrinterData">
+      <HintPath>Files\CapellaPrinterData.dll</HintPath>
+    </Reference>
+    <Reference Include="CapellaPrinterWidget">
+      <HintPath>Files\CapellaPrinterWidget.dll</HintPath>
+    </Reference>
+    <Reference Include="ColorMapCustomControl">
+      <HintPath>Files\ColorMapCustomControl.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonRenderingLib31">
+      <HintPath>Files\CommonRenderingLib31.dll</HintPath>
+    </Reference>
+    <Reference Include="ConvexHull">
+      <HintPath>Files\ConvexHull.dll</HintPath>
+    </Reference>
+    <Reference Include="CornealTopography">
+      <HintPath>Files\CornealTopography.dll</HintPath>
+    </Reference>
+    <Reference Include="DLLWrapper3">
+      <HintPath>Files\DLLWrapper3.dll</HintPath>
+    </Reference>
+    <Reference Include="WidgetUtils">
+      <HintPath>Files\WidgetUtils.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
