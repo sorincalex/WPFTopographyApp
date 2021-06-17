@@ -14,8 +14,8 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <local:ColorMapControl Grid.Row="0" Grid.Column="0" x:Name="test1" ColorMapWidth="220" ColorMapHeight="150" OrientationBackground="true" ColorScalePosition="right" ColorMapColors="256" AnnotationSpace="20" ShowValues="false" ShowOrientation="true" ShowPupil="true" FontSizeHint="Largest"></local:ColorMapControl>
-        <local:ColorMapControl Grid.Row="0" Grid.Column="1" x:Name="test2" ColorMapType="elevation" OrientationBackground="False" ColorMapWidth="300" ColorMapHeight="300" ShowValues="false" ShowOrientation="true" ShowPupil="true" ColorScalePosition="left" ColorMapColors="256" AnnotationSpace="20"></local:ColorMapControl>
+        <local:ColorMapControl Grid.Row="0" Grid.Column="0" x:Name="test1" OrientationBackground="False" ColorMapWidth="220" ColorMapHeight="150" ColorScalePosition="right" ColorMapColors="256" AnnotationSpace="20" ShowValues="true" ShowOrientation="true" MaskTransparency="0.6" ShowPupil="true" FontSizeHint="Largest"></local:ColorMapControl>
+        <local:ColorMapControl Grid.Row="0" Grid.Column="1" x:Name="test2" OrientationBackground="True" ColorMapType="elevation" ColorMapWidth="300" ColorMapHeight="300" ShowValues="true" ShowOrientation="true" MaskTransparency="0" ShowPupil="true" ColorScalePosition="left" ColorMapColors="256" AnnotationSpace="20"></local:ColorMapControl>
         <!-- <local:ColorMapControl Grid.Row="0" Grid.Column="2" x:Name="test3" ColorMapType="elevation" ColorMapWidth="220" ColorMapHeight="250" ColorScalePosition="right" ShowPupil="true" AnnotationSpace="50"></local:ColorMapControl>
         -->
     </Grid>
