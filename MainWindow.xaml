@@ -8,15 +8,17 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <!-- <ColumnDefinition Width="*" />
-            -->
+            <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
 
-        <local:ColorMapControl Grid.Row="0" Grid.Column="0" x:Name="test1" OrientationBackground="False" ColorMapType="elevation" ColorMapWidth="220" SurfaceToFit="1" ColorMapHeight="150" ColorScalePosition="right" ColorMapColors="256" AnnotationSpace="0" ShowValues="true" ShowOrientation="true" MaskTransparency="1" ShowPupil="true" FontSizeHint="Largest"></local:ColorMapControl>
-        <local:ColorMapControl Grid.Row="0" Grid.Column="1" x:Name="test2" OrientationBackground="True" ColorMapType="tangential" ColorMapWidth="300" ColorMapHeight="300" ShowValues="true" ShowOrientation="true" MaskTransparency="0.1" ShowPupil="true" ColorScalePosition="left" ColorMapColors="256" AnnotationSpace="20"></local:ColorMapControl>
-        <!-- <local:ColorMapControl Grid.Row="0" Grid.Column="2" x:Name="test3" ColorMapType="elevation" ColorMapWidth="220" ColorMapHeight="250" ColorScalePosition="right" ShowPupil="true" AnnotationSpace="50"></local:ColorMapControl>
-        -->
+        <local:ColorMapControl Grid.Row="0" Grid.Column="0" x:Name="test1" OrientationBackground="False" ColorMapType="elevation" TextColorType="FromResource" ColorMapWidth="100" ColorMapHeight="190" SurfaceToFit="1" ColorScalePosition="right" ColorMapColors="256" AnnotationSpace="10" ShowValues="true" ShowOrientation="true" MaskTransparency="1" ShowPupil="true" FontSizeHint="Largest"></local:ColorMapControl>
+        <local:ColorMapControl Grid.Row="0" Grid.Column="1" x:Name="test2" OrientationBackground="True" ColorMapType="tangential" TextColorType="AllWhite" ColorMapWidth="250" ColorMapHeight="250" ShowValues="true" ShowOrientation="true" MaskTransparency="0.1" ShowPupil="true" ColorScalePosition="left" ColorMapColors="256" AnnotationSpace="20"></local:ColorMapControl>
+        <local:ColorMapControl Grid.Row="0" Grid.Column="2" x:Name="test3" ColorMapType="axial" ColorMapWidth="200" ColorMapHeight="200" ColorScalePosition="right" ShowPupil="true" ShowOrientation="True" AnnotationSpace="50"></local:ColorMapControl>
+        
     </Grid>
 </Window>
